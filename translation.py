@@ -3,57 +3,52 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 class Translation(object):
 
     START_TEXT = """
-Hello {} , I'am a url to telegram file or media uploader bot with permanent thumbnail support.
+<b>Hello {}!!!
 
-Made by @FayasNoushad
+I am Url to telegram file or media uploader bot with permanent thumbnail support.</b>
+
+<b>For More Details check Help 📜</b>
 """
     HELP_TEXT = """
-<b><u>Link to Media or File</u></b>
-➠ Send a link for upload to telegram file or media.
+<b>Link to Media or File</b>
+- Send a link for upload to telegram file or media.
 
-<b><u>Set Thumbnail</u></b>
-➠ Send a photo to make it as permanent thumbnail.
+<b>Set Thumbnail</b>
+- Send a photo to make it as permanent thumbnail.
 
-<b><u>Deleting Thumbnail</u></b>
-➠ Send /delthumb to deleting thumbnail.
+<b>Deleting Thumbnail</b>
+- Send /delthumb to deleting thumbnail.
 
-<b><u>Show Thumbnail</u></b>
-➠ Send /showthumb to view custom thumbnail.
-
-Made by @FayasNoushad
+<b>Show Thumbnail</b>
+- Send /showthumb to view custom thumbnail.
 """
     ABOUT_TEXT = """
-- **Bot :** `URL Uploader`
-- **Creator :** [Fayas](https://telegram.me/TheFayas)
-- **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
-- **Credits :** `Everyone in this journey`
-- **Source :** [Click here](https://github.com/FayasNoushad/URL-Uploader)
-- **Language :** [Python3](https://python.org)
-- **Library :** [Pyrogram v1.2.0](https://pyrogram.org)
-- **Server :** [Heroku](https://heroku.com)
+**Bot :** URL Uploader
+**Creator :** [Tellybots_4u](https://telegram.me/tellybots_4u)
+**Channel :** [Tellybots_4u](https://telegram.me/tellybots_4u)
+**Credits :** `Everyone in this journey`
+**Language :** [Python3](https://python.org)
+**Library :** [Pyrogram v1.2.0](https://pyrogram.org)
+**Server :** [Heroku](https://heroku.com)
 """
     START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
-        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
+        InlineKeyboardButton('❔ Help', callback_data='help'),
+        InlineKeyboardButton('👲 About', callback_data='about'),
         ],[
-        InlineKeyboardButton('Help', callback_data='help'),
-        InlineKeyboardButton('About', callback_data='about'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('Close ⛔', callback_data='close')
         ]]
     )
     HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Home', callback_data='home'),
-        InlineKeyboardButton('About', callback_data='about'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('👲 About', callback_data='about'),
+        InlineKeyboardButton('Close ⛔', callback_data='close')
         ]]
     )
     ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Home', callback_data='home'),
-        InlineKeyboardButton('Help', callback_data='help'),
-        InlineKeyboardButton('Close', callback_data='close')
+        InlineKeyboardButton('🏡 Home', callback_data='home'),
+        InlineKeyboardButton('Close ⛔', callback_data='close')
         ]]
     )
     FORMAT_SELECTION = """<b>Select the desired format:</b> <a href='{}'>file size might be approximate</a>
