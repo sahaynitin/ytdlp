@@ -315,9 +315,9 @@ async def yt_dlp_call_back(bot, update):
             if Config.SCREENSHOTS:
                 if images is not None:
                     i = 0
-                    caption = "©️ @UrlUploader4uBot"
+                    caption = ""
                     if is_w_f:
-                        caption = "©️ @Tellybots_4u"
+                        caption = ""
                     for image in images:
                         if os.path.exists(image):
                             if i == 0:
