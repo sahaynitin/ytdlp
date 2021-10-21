@@ -148,7 +148,7 @@ async def yt_dlp_call_back(bot, update):
     t_response = stdout.decode().strip()
     # logger.info(e_response)
     # logger.info(t_response)
-    ad_string_to_replace = "please report this issue on GitHub Yt-dlp 🕸️. Make sure you are using the latest version; see on Yt-dlp GitHub Package for how to update. Be sure to call yt-dlp with the --verbose flag and include its complete output."
+    ad_string_to_replace = "please report this issue on https://github/yt-dlp/yt-dlp. Make sure you are using the latest version; see on https://yt-dlp.org GitHub Package for how to update. Be sure to call yt-dlp with the --verbose flag and include its complete output."
     if e_response and ad_string_to_replace in e_response:
         error_message = e_response.replace(ad_string_to_replace, "")
         await bot.edit_message_text(
